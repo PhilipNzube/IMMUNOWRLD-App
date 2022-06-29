@@ -164,9 +164,8 @@ a{
     }
     #Mask2{
     
-    bottom:200px;
-    position:relative;
-    height:700px;
+      bottom:0px;
+      position:relative;
     }
     #Forms2{
       bottom:50px;
@@ -760,9 +759,10 @@ a{
     position:relative;
     }
     #Mask2{
-    height:700px;
-    bottom:160px;
-    position:relative;
+      width:100px;
+      height:100px; 
+      bottom:0px;
+      position:relative;
     }
     #Forms2{
       bottom:50px;
@@ -1368,9 +1368,10 @@ a{
     position:relative;
     }
     #Mask2{
-    height:700px;
-    bottom:160px;
-    position:relative;
+      width:100px;
+      height:100px; 
+      bottom:0px;
+      position:relative;
     }
     #Forms2{
       bottom:50px;
