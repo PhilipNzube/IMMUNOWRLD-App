@@ -7,7 +7,7 @@ import MyApp from "./Home.js";
 function START(){
     return(
         <>
-        <BrowserRouter basename="/IMMUNOWRLD-App">
+        <BrowserRouter basename>
         <Routes>
             <Route path="/" element={<Login/>}/>
             <Route path="/Home" element={<MyApp/>}/>
