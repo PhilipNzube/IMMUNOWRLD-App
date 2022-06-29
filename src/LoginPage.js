@@ -304,7 +304,7 @@ let url=null;
 <div id="Contents2">
 <div id="Forms2">
 <center><img alt='' id="Mask" width="120px" height="130px" src={ImmunocalypseIcon}/></center>
-<label id="InfoID"><center>Confirm your password</center></label>
+<label id="InfoID2"><center>Confirm your password</center></label>
 <br/><br/><br/><br/>
 <center><input id="ActivationcodeID2" type="password" placeholder="Enter Previous Password" title="Password must contain: Minimum 8 characters atleast 1 Alphabet and 1 Number" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" required/></center>
 <br/><center><input id="ActivationcodeID3" type="password" placeholder="New PassWord" title="Password must contain: Minimum 8 characters atleast 1 Alphabet and 1 Number" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" required/><div id="PswVisible">

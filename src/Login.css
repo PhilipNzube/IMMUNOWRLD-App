@@ -234,6 +234,13 @@ a{
     color:#ccc;
     font-family:OCR A Std, monospace;
     }
+
+    #InfoID2{
+      top:70px;
+      position:relative;
+      color:#ccc;
+      font-family:OCR A Std, monospace;
+      }
     #RememberID{
     color:#ccc;
     position:relative;
@@ -818,6 +825,14 @@ a{
     font-family:OCR A Std, monospace;
     font-size:15px;
     }
+
+    #InfoID2{
+      top:70px;
+      position:relative;
+      color:#ccc;
+      font-family:OCR A Std, monospace;
+      font-size:15px;
+      }
     #RememberID{
     color:#ccc;
     position:relative;
@@ -1418,6 +1433,13 @@ a{
     font-family:OCR A Std, monospace;
     font-size:15px;
     }
+    #InfoID2{
+      top:70px;
+      position:relative;
+      color:#ccc;
+      font-family:OCR A Std, monospace;
+      font-size:15px;
+      }
     #RememberID{
     color:#ccc;
     position:relative;
