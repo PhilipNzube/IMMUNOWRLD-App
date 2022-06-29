@@ -7,7 +7,7 @@ import MyApp from "./Home.js";
 function START(){
     return(
         <>
-        <BrowserRouter>
+        <BrowserRouter basename={window.location.pathname || ''}>
         <Routes>
             <Route path="/" element={<Login/>}/>
             <Route path="/Home" element={<MyApp/>}/>
