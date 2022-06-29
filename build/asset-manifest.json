@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.026839df.css",
+    "main.css": "/static/css/main.0d2bdc8f.css",
     "main.js": "/static/js/main.fab7ea87.js",
     "static/media/Gallary4.png": "/static/media/Gallary4.57e6e710c531ca0db947.png",
     "static/media/GameName2.png": "/static/media/GameName2.4bfe94a4fa08b5486a03.png",
@@ -14,11 +14,11 @@
     "static/media/Immunocalypse2-Icon.png": "/static/media/Immunocalypse2-Icon.bdad6b135d75e6552b06.png",
     "static/media/Insta.png": "/static/media/Insta.e9857db10ca57d66ad36.png",
     "index.html": "/index.html",
-    "main.026839df.css.map": "/static/css/main.026839df.css.map",
+    "main.0d2bdc8f.css.map": "/static/css/main.0d2bdc8f.css.map",
     "main.fab7ea87.js.map": "/static/js/main.fab7ea87.js.map"
   },
   "entrypoints": [
-    "static/css/main.026839df.css",
+    "static/css/main.0d2bdc8f.css",
     "static/js/main.fab7ea87.js"
   ]
 }
