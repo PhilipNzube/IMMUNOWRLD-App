@@ -301,8 +301,8 @@ let url=null;
  <div id="popup2" className="overlay2">
 <div className="popup">
 
-<div id="Contents">
-<div id="Forms">
+<div id="Contents2">
+<div id="Forms2">
 <center><img alt='' id="Mask" width="120px" height="130px" src={ImmunocalypseIcon}/></center>
 <label id="InfoID"><center>Confirm your password</center></label>
 <br/><br/><br/><br/>

@@ -169,8 +169,8 @@ a{
     height:700px;
     }
     #Forms2{
-    bottom:120px;
-    position:relative;
+      bottom:50px;
+      position:relative;
     }
     #Forms3{
     bottom:100px;
@@ -223,6 +223,11 @@ a{
     top:50px;
     position:relative;
     }
+
+    #Contents2{
+      top:50px;
+      position:relative;
+      }
     #InfoID{
     top:70px;
     position:relative;
@@ -753,8 +758,8 @@ a{
     position:relative;
     }
     #Forms2{
-    bottom:120px;
-    position:relative;
+      bottom:50px;
+      position:relative;
     }
     #Forms3{
     bottom:100px;
@@ -801,6 +806,11 @@ a{
     top:50px;
     position:relative;
     }
+
+    #Contents2{
+      top:50px;
+      position:relative;
+      }
     #InfoID{
     top:70px;
     position:relative;
@@ -1348,8 +1358,8 @@ a{
     position:relative;
     }
     #Forms2{
-    bottom:120px;
-    position:relative;
+      bottom:50px;
+      position:relative;
     }
     #Forms3{
     bottom:100px;
@@ -1396,6 +1406,11 @@ a{
     top:50px;
     position:relative;
     }
+
+    #Contents2{
+      top:50px;
+      position:relative;
+      }
     #InfoID{
     top:70px;
     position:relative;
