@@ -16,6 +16,11 @@ a{
     top:110px;
     left:75px;
     }
+    #PV2{
+      position:relative;
+      top:110px;
+      left:75px;
+      }
     #SP{
     font-size:15px;
     font-family:OCR A Std, monospace;
@@ -23,6 +28,14 @@ a{
     bottom:-90px;
     left:-70px;
     }
+    #SP1{
+      font-size:15px;
+      font-family:OCR A Std, monospace;
+      position:relative;
+      bottom:-90px;
+      left:-70px;
+      }
+   
     #PswVisible{
     color:#ccc;
     width:20px;
@@ -32,20 +45,23 @@ a{
     bottom:168px;
     left:10px;
     }
+
+    #PswVisible2{
+      color:#ccc;
+      width:20px;
+      height:20px;
+      border-radius:50px;
+      position:relative;
+      bottom:168px;
+      left:10px;
+      }
     #PswVisible1{
     position:relative;
     
     
     }
     
-    #SP1{
-    font-size:11px;
-    font-family:OCR A Std, monospace;
-    position:relative;
-    bottom:150px;
-    left:10px;
-    display:none;
-    }
+    
     #PswVisible1{
     color:#ccc;
     width:20px;
@@ -56,10 +72,13 @@ a{
     left:-40px;
     }
     #PswVisible2{
-    position:relative;
-    left:128px;
-    bottom:165px;
-    display:none;
+      color:#ccc;
+      width:20px;
+      height:20px;
+      border-radius:50px;
+      position:relative;
+      top:0px;
+      left:-40px;
     }
     #GenerateButBG{
     width:25%;
@@ -210,12 +229,12 @@ a{
     text-decoration:none;
     }
     #Submit2{
-    left:30px;
-    top:0px;
-    position:relative;
-    color:#ccc;
-    font-family:OCR A Std, monospace;
-    text-decoration:none;
+      right:2px;
+      top:0px;
+      position:relative;
+      color:#ccc;
+      font-family:OCR A Std, monospace;
+      text-decoration:none;
     }
     
     #Contents{
@@ -615,11 +634,23 @@ a{
     bottom:25px;
     left:180px;
     }
+    #PV2{
+      position:relative;
+      bottom:25px;
+      left:180px;
+      }
     #SP{
     position:relative;
     bottom:-100px;
     left:0px;
     font-size:12px;
+    }
+
+    #SP1{
+      position:relative;
+      bottom:-100px;
+      left:0px;
+      font-size:12px;
     }
     #PswVisible{
     color:#ccc;
@@ -630,19 +661,27 @@ a{
     bottom:165px;
     left:-50px;
     }
+
+    #PswVisible2{
+      color:#ccc;
+      width:10px;
+      height:10px;
+      border-radius:50px;
+      position:relative;
+      bottom:165px;
+      left:-50px;
+      }
     #PswVisible1{
     position:relative;
     top:140px;
     left:100px;
     }
+    #PswVisible2{
+      position:relative;
+      top:140px;
+      left:100px;
+      }
     
-    #SP1{
-    position:relative;
-    bottom:375px;
-    left:40px;
-    font-size:10px;
-    display:none;
-    }
     #PswVisible1{
     color:#ccc;
     width:10px;
@@ -653,10 +692,13 @@ a{
     left:-80px;
     }
     #PswVisible2{
-    position:relative;
-    left:140px;
-    bottom:390px;
-    display:none;
+      color:#ccc;
+      width:10px;
+      height:10px;
+      border-radius:50px;
+      position:relative;
+      bottom:820px;
+      left:-80px;
     }
     #GenerateButBG{
     width:100px;
@@ -809,6 +851,16 @@ a{
     font-size:15px;
     }
     
+
+    #Submit2{
+      right:2px;
+      top:-5px;
+      position:relative;
+      color:#ccc;
+      font-family:OCR A Std, monospace;
+      text-decoration:none;
+      font-size:15px;
+      }
     #Contents{
     top:50px;
     position:relative;
@@ -1226,11 +1278,24 @@ a{
     bottom:25px;
     left:180px;
     }
+    #PV2{
+      position:relative;
+      bottom:25px;
+      left:180px;
+      }
     #SP{
     position:relative;
     bottom:-100px;
     left:0px;
     font-size:12px;
+    }
+
+  
+    #SP1{
+      position:relative;
+      bottom:-100px;
+      left:0px;
+      font-size:12px;
     }
     #PswVisible{
     color:#ccc;
@@ -1241,19 +1306,28 @@ a{
     bottom:165px;
     left:-50px;
     }
+
+    #PswVisible2{
+      color:#ccc;
+      width:10px;
+      height:10px;
+      border-radius:50px;
+      position:relative;
+      bottom:165px;
+      left:-50px;
+      }
     #PswVisible1{
     position:relative;
     top:140px;
     left:100px;
     }
+
+    #PswVisible2{
+      position:relative;
+      top:140px;
+      left:100px;
+      }
     
-    #SP1{
-    position:relative;
-    bottom:375px;
-    left:40px;
-    font-size:10px;
-    display:none;
-    }
     #PswVisible1{
     color:#ccc;
     width:10px;
@@ -1264,10 +1338,13 @@ a{
     left:-80px;
     }
     #PswVisible2{
-    position:relative;
-    left:140px;
-    bottom:390px;
-    display:none;
+      color:#ccc;
+      width:10px;
+      height:10px;
+      border-radius:50px;
+      position:relative;
+      bottom:820px;
+      left:-80px;
     }
     #GenerateButBG{
     width:100px;
@@ -1417,6 +1494,16 @@ a{
     text-decoration:none;
     font-size:15px;
     }
+
+    #Submit2{
+      right:2px;
+      top:-5px;
+      position:relative;
+      color:#ccc;
+      font-family:OCR A Std, monospace;
+      text-decoration:none;
+      font-size:15px;
+      }
     
     #Contents{
     top:50px;

@@ -308,10 +308,10 @@ let url=null;
 <br/><br/><br/><br/>
 <center><input id="ActivationcodeID2" type="password" placeholder="Enter Previous Password" title="Password must contain: Minimum 8 characters atleast 1 Alphabet and 1 Number" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" required/></center>
 <br/><center><input id="ActivationcodeID3" type="password" placeholder="New PassWord" title="Password must contain: Minimum 8 characters atleast 1 Alphabet and 1 Number" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" required/><div id="PswVisible">
-<div id="PV1"><input id="PswVisible1" type="checkbox" onClick={ShowPswd2}/></div><div id="SP">SHOWPASSWORD</div></div></center><br/>
+<div id="PV2"><input id="PswVisible2" type="checkbox" onClick={ShowPswd2}/></div><div id="SP1">SHOWPASSWORD</div></div></center><br/>
 <a href={url} id="CloseButton" onClick={CLOSE}>CLOSE</a>
 <center><div id="SubmitBG2">
-<a href={url} id="Submit" onClick={ConfirmPassword} >CONFIRM</a><div id="Warning2"></div></div></center>
+<a href={url} id="Submit2" onClick={ConfirmPassword} >CONFIRM</a><div id="Warning2"></div></div></center>
 
 </div>
 </div>
