@@ -7,9 +7,9 @@ import MyApp from "./Home.js";
 function START(){
     return(
         <>
-        <BrowserRouter basename>
+        <BrowserRouter basename="/IMMUNOCALYPSE-App">
         <Routes>
-            <Route path="/" element={<Login/>}/>
+            <Route exactpath="/" element={<Login/>}/>
             <Route path="/Home" element={<MyApp/>}/>
         </Routes>
         
