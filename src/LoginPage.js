@@ -43,10 +43,12 @@ export default function Login(){
  setTimeout(function(){
  document.getElementById("container").style.display="block";
  document.getElementById("Loader").style.display="none";
+ document.getElementById("SubmitBG").style.display="none";
+ document.getElementById("SubmitBG2").style.display="none";
  var Visible=JSON.parse(localStorage.getItem("Visible"));
  if(Visible===false){
  document.getElementById("GenerateButBG").style.display="none";
- document.getElementById("SubmitBG").style.display="block";
+ //document.getElementById("SubmitBG").style.display="block";
   document.getElementById("ResetButton").style.display="block";
  //document.getElementById("SubmitBG").style.display="block";
  }
@@ -65,9 +67,9 @@ if(FirstTime===false){
 console.log("NotFirstTime");
 }else if(FirstTime===true){
   console.log("FirstTime");
-document.getElementById("GenerateButBG").style.display="block";
+//document.getElementById("GenerateButBG").style.display="block";
 document.getElementById("SubmitBG").style.display="none";
-  document.getElementById("ResetButton").style.display="none";
+document.getElementById("ResetButton").style.display="none";
 
 }
  //typeWriter();
@@ -106,6 +108,14 @@ console.log("Loaded");
  document.getElementById("toggle").checked=true;
  Username.value=localStorage.getItem("Username");
  ActivationCode.value=localStorage.getItem("ActivationCode");
+ const PSWPattern=/^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/;
+var AID=document.getElementById("ActivationcodeID");
+const Test=PSWPattern.test(AID.value);
+if(Test===false){
+  document.getElementById("SubmitBG").style.display="none";
+}else if(Test===true){
+  document.getElementById("SubmitBG").style.display="block";
+}
  document.querySelector(".overlay").style.visibility="visible";
     document.querySelector(".overlay").style.opacity=1;
     localStorage.setItem("cb1", true);
@@ -131,7 +141,7 @@ console.log("Loaded");
 const GenerateRandomCode=(length)=>{
 console.log("AboutToGenerated");
 var AID=document.getElementById("ActivationcodeID");
-var chars="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";
+var chars="1234567890abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
 var code="";
 for(var x=0; x < length; x++){
   localStorage.setItem("FirstTime", false);
@@ -141,7 +151,7 @@ code += chars.charAt(i);
 }
 AID.value=code;
 document.getElementById("GenerateButBG").style.display="none";
-document.getElementById("SubmitBG").style.display="block";
+//document.getElementById("SubmitBG").style.display="block";
 document.getElementById("ResetButton").style.display="block";
 localStorage.setItem("AID", AID.value);
 localStorage.setItem("Visible", false);
@@ -175,10 +185,16 @@ console.log("AboutToLunchApp");
 var UID=document.getElementById("UsenameID");
 var AID=document.getElementById("ActivationcodeID");
 var ActivationCode=localStorage.getItem("AID");
+var FirstTime=JSON.parse(localStorage.getItem("FirstTime"));
+if(FirstTime===true){
+  localStorage.setItem("AID", AID.value); 
+  Navigate("/Home");
+  localStorage.setItem("FirstTime", false);
+}else if(FirstTime===false){
 if(AID.value===ActivationCode){
 if(UID.value!==""){
   Navigate("/Home");
-  localStorage.setItem("FirstTime", false);
+  //localStorage.setItem("FirstTime", false);
 //document.querySelector(".overlay").style.display="none";
 //document.body.style.background="./images/BG4.png";
 //typeWriter();
@@ -199,6 +215,7 @@ document.getElementById("Warning").innerHTML="Incorrect Password!!!";
 setTimeout(function(){ 
 document.getElementById("Warning").innerHTML="";
 },3000);
+}
 }
 }
 
@@ -253,6 +270,30 @@ const CLOSE=()=>{
   document.getElementById("popup1").style.display="block";
 }
 
+const CHECK=()=>{
+const PSWPattern=/^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/;
+var AID=document.getElementById("ActivationcodeID");
+const Test=PSWPattern.test(AID.value);
+if(Test===false){
+  document.getElementById("SubmitBG").style.display="none";
+}else if(Test===true){
+  document.getElementById("SubmitBG").style.display="block";
+}
+}
+
+
+  const CHECK2=()=>{
+    const PSWPattern=/^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/;
+    const AID2=document.getElementById("ActivationcodeID2");
+    const AID3=document.getElementById("ActivationcodeID3");
+    const Test=PSWPattern.test(AID2.value);
+    const Test2=PSWPattern.test(AID3.value);
+    if(Test===false){
+      document.getElementById("SubmitBG2").style.display="none";
+    }else if(Test===true && Test2===true){
+      document.getElementById("SubmitBG2").style.display="block";
+    }
+    }
 let url=null;
     return(
         <>
@@ -270,13 +311,13 @@ let url=null;
 <div id="Contents">
 <div id="Forms">
 <div id="GenerateButBG">
-<center><a href={url} id="GenerateBut" onClick={(val)=>GenerateRandomCode(5)} >GenerateCode</a></center>
+<center><a href={url} id="GenerateBut" onClick={(val)=>GenerateRandomCode(8)} >GenerateCode</a></center>
 </div>
 <center><img alt='' id="Mask" width="120px" height="130px" src={ImmunocalypseIcon}/></center>
 <label id="InfoID"><center>Enter your user info</center></label>
 <br/><br/><br/><br/>
 <center><input id="UsenameID" type="text" placeholder="Username" required/></center>
-<br/><center><input id="ActivationcodeID" type="password" placeholder="PassWord" title="Password must contain: Minimum 8 characters atleast 1 Alphabet and 1 Number" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" required/><div id="PswVisible">
+<br/><center><input id="ActivationcodeID" onChange={CHECK} type="password" placeholder="PassWord" title="Password must contain: Minimum 8 characters atleast 1 Alphabet and 1 Number" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" required/><div id="PswVisible">
 <div id="PV1"><input id="PswVisible1" type="checkbox" onClick={ShowPswd}/></div><div id="SP">SHOWPASSWORD</div></div></center><br/><br/>
 <a href={url} id="ResetButton" onClick={Reset}>RESET</a>
 <div id="REMBG">
@@ -307,7 +348,7 @@ let url=null;
 <label id="InfoID2"><center>Confirm your password</center></label>
 <br/><br/><br/><br/>
 <center><input id="ActivationcodeID2" type="password" placeholder="Enter Previous Password" title="Password must contain: Minimum 8 characters atleast 1 Alphabet and 1 Number" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" required/></center>
-<br/><center><input id="ActivationcodeID3" type="password" placeholder="New PassWord" title="Password must contain: Minimum 8 characters atleast 1 Alphabet and 1 Number" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" required/><div id="PswVisibleb">
+<br/><center><input id="ActivationcodeID3" onChange={CHECK2} type="password" placeholder="New PassWord" title="Password must contain: Minimum 8 characters atleast 1 Alphabet and 1 Number" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" required/><div id="PswVisibleb">
 <div id="PV2"><input id="PswVisible2" type="checkbox" onClick={ShowPswd2}/></div><div id="SP1">SHOWPASSWORD</div></div></center><br/>
 <a href={url} id="CloseButton" onClick={CLOSE}>CLOSE</a>
 <center><div id="SubmitBG2">

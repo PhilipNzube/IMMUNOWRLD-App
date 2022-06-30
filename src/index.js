@@ -9,8 +9,8 @@ function START(){
         <>
         <BrowserRouter>
         <Routes>
-            <Route path="/Login" element={<Login/>}/>
-            <Route path="/" element={<MyApp/>}/>
+            <Route path="/" element={<Login/>}/>
+            <Route path="/Home" element={<MyApp/>}/>
         </Routes>
         
         </BrowserRouter>

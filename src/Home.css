@@ -70,7 +70,9 @@ border-radius: 50px;
 }
 
 #LogoText{
-color:rgb(189, 33, 33);
+filter:blur(0.05em);
+filter: brightness(100em);
+color:rgb(255, 0, 0);
 font-family:'Courier New', Courier, monospace;
 position: relative;
 bottom: 80px; 
@@ -509,6 +511,8 @@ background-color:rgba(15, 14, 14, 0.685);
 }
 
 #LogoText{
+    filter:blur(0.05em);
+filter: brightness(100em);
 color:rgb(189, 33, 33);
 font-family:'Courier New', Courier, monospace;
 position: relative;
@@ -943,6 +947,8 @@ background-color:rgba(15, 14, 14, 0.685);
 }
 
 #LogoText{
+    filter:blur(0.05em);
+filter: brightness(100em);
 color:rgb(189, 33, 33);
 font-family:'Courier New', Courier, monospace;
 position: relative;
