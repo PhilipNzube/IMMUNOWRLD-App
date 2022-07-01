@@ -81,6 +81,7 @@ a{
       left:-40px;
     }
     #GenerateButBG{
+    display:none;
     width:25%;
     left:-5%;
     top:320px;
@@ -701,6 +702,7 @@ a{
       left:-80px;
     }
     #GenerateButBG{
+    display:none;
     width:100px;
     left:-2%;
     top:290px;
@@ -1347,6 +1349,7 @@ a{
       left:-80px;
     }
     #GenerateButBG{
+    display:none;
     width:100px;
     left:30%;
     top:330px;
