@@ -45,7 +45,6 @@ export default function Login(){
  document.getElementById("Loader").style.display="none";
  document.getElementById("SubmitBG").style.display="none";
  document.getElementById("SubmitBG2").style.display="none";
- LoadBox();
  var Visible=JSON.parse(localStorage.getItem("Visible"));
  if(Visible===false){
  document.getElementById("GenerateButBG").style.display="none";
@@ -74,7 +73,7 @@ document.getElementById("ResetButton").style.display="none";
 
 }
  //typeWriter();
-
+  LoadBox();
 
  },1000);
  
@@ -129,11 +128,11 @@ if(Test===false){
  }else{
   console.log("AboutToMakeOverlayVisible!!");
   setTimeout(function(){
-    if(JSON.parse(localStorage.getItem("Release"))===false){
+    //if(JSON.parse(localStorage.getItem("Release"))===false){
       console.log("MakeOverlayVisible!!");
     document.querySelector(".overlay").style.visibility="visible";
     document.querySelector(".overlay").style.opacity=1;
-    }
+    //}
   },500);
  }
  }
