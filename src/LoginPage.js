@@ -187,9 +187,13 @@ var AID=document.getElementById("ActivationcodeID");
 var ActivationCode=localStorage.getItem("AID");
 var FirstTime=JSON.parse(localStorage.getItem("FirstTime"));
 if(FirstTime===true){
+  if(UID.value!==""){
   localStorage.setItem("AID", AID.value); 
   Navigate("/Home");
   localStorage.setItem("FirstTime", false);
+  }else{
+    document.getElementById("Warning").innerHTML="No UserName!!Pls Input One";  
+  }
 }else if(FirstTime===false){
 if(AID.value===ActivationCode){
 if(UID.value!==""){
