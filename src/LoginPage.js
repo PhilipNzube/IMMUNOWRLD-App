@@ -45,6 +45,7 @@ export default function Login(){
  document.getElementById("Loader").style.display="none";
  document.getElementById("SubmitBG").style.display="none";
  document.getElementById("SubmitBG2").style.display="none";
+ LoadBox();
  var Visible=JSON.parse(localStorage.getItem("Visible"));
  if(Visible===false){
  document.getElementById("GenerateButBG").style.display="none";
@@ -73,7 +74,7 @@ document.getElementById("ResetButton").style.display="none";
 
 }
  //typeWriter();
-  LoadBox();
+
 
  },1000);
  
