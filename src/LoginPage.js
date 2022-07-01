@@ -221,7 +221,7 @@ document.getElementById("Warning").innerHTML="";
 
 const Reset=()=>{
   //localStorage.setItem("AID", AID.value);
-  //localStorage.setItem("FirstTime",true);
+  localStorage.setItem("FirstTime",true);
 
   //document.getElementById("GenerateButBG").style.display="block";
   //document.getElementById("ResetButton").style.display="none";
