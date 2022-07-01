@@ -45,6 +45,10 @@ export default function Login(){
  document.getElementById("Loader").style.display="none";
  document.getElementById("SubmitBG").style.display="none";
  document.getElementById("SubmitBG2").style.display="none";
+ var FirstTime=JSON.parse(localStorage.getItem("FirstTime"));
+ if(FirstTime===null){
+  localStorage.setItem("FirstTime", false);
+ }
  var Visible=JSON.parse(localStorage.getItem("Visible"));
  if(Visible===false){
  document.getElementById("GenerateButBG").style.display="none";
